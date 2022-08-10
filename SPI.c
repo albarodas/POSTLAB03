@@ -1,10 +1,8 @@
- /*
- * File            : spi.c
- * Author          : Ligo George
- * Company         : electroSome
- * Project         : SPI Library for MPLAB XC8
- * Microcontroller : PIC 16F877A
- * Created on April 15, 2017, 5:59 PM
+/*
+ * File:   SPI.c
+ * Author: ALBA RODAS
+ *
+ * Created on 4 de agosto de 2022, 23:47
  */
 
 #include "SPI.h"

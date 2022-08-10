@@ -1,8 +1,8 @@
-/* 
- * File:   ADC.h
+/*
+ * File:   
  * Author: ALBA RODAS
  *
- * Created on 22 de julio de 2022, 08:20 AM
+ * Created on 4 de agosto de 2022, 22:01
  */
 
 // This is a guard condition so that contents of this file are not included
@@ -12,20 +12,17 @@
 
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include <stdint.h>
+//CONFIGURACIÓN EL ADC EN EL AD0, RA0
+/*
+00 = Fosc/2 (default)
+01 = Fosc/8
+10 = Fosc/32
+11 = FRC
+ */
 
-    // AQUI CONFIGURAMOS EL ADC_CS: 
-    //00 = FOSC/2
-    //01 = FOSC/8
-    //10 = FOSC/32
-    //11 = Frc
-   //ADCON0bits.CHS = 0b000;
-   /* ADCON1bits.ADFM = 1;
-    ADCON0bits.ADON = 1;
-    __delay_ms(1);*/
-
-void initADC(uint8_t adc_cs, uint8_t vref_plus, uint8_t vref_min);
-void adc_start(uint8_t channel_1, uint8_t channel_2);
-uint16_t read_ADC(void);
+void initADC(uint8_t ADCS_ADC, uint8_t vref_plus, uint8_t vref_min);
+void startADC(uint8_t channel_1, uint8_t channel_2);
+uint16_t ADCRead(void);
 
 #endif	/* XC_HEADER_TEMPLATE_H */
 

@@ -1,14 +1,9 @@
- /*
- * File            : spi.h
- * Author          : Ligo George
- * Company         : electroSome
- * Project         : SPI Library for MPLAB XC8
- * Microcontroller : PIC 16F877A
- * Created on April 15, 2017, 5:59 PM
+/*
+ * File:   
+ * Author: ALBA RODAS
+ *
+ * Created on 4 de agosto de 2022, 22:01
  */
-
-// This is a guard condition so that contents of this file are not included
-// more than once.  
 #ifndef __SPI_H
 #define	__SPI_H
 
@@ -49,3 +44,4 @@ unsigned spiDataReady();
 char spiRead();
 
 #endif
+
